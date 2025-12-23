@@ -1,12 +1,12 @@
 {
   "name": "latex-paste",
   "displayName": "paste image to latex in wsl",
-  "description": "use ctrl+v to paste image directly in any file",
-  "version": "2.13.2",
+  "description": "use ctrl+shift+v to paste image directly in any file",
+  "publisher": "asierrayk",
+  "version": "0.0.1",
   "engines": {
     "vscode": "^1.71.0"
   },
-  "publisher": "dzylikecode",
   "author": {
     "name": "Dz",
     "email": "mathBeWithCode@gmail.com"
