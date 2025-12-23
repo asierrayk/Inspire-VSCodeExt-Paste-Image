@@ -1,6 +1,6 @@
 {
-  "name": "md-paste-enhanced",
-  "displayName": "paste image anywhere",
+  "name": "latex-paste",
+  "displayName": "paste image to latex in wsl",
   "description": "use ctrl+v to paste image directly in any file",
   "version": "2.13.2",
   "engines": {
@@ -25,6 +25,7 @@
     "paste",
     "image",
     "markdown",
+    "latex",
     "typst",
     "paste image",
     "keybindings",
@@ -70,6 +71,7 @@
         "mdPasteEnhanced.renderMap": {
           "type": "array",
           "default": [
+            "**/*.tex  => \\includegraphics{${imagePath}}",
             "**/*.md  => ![${userVar}](${imagePath})",
             "**/*.typ => #image(\"${imagePath}\"${userVar})",
             "**/*     => ${imagePath}"
@@ -140,7 +142,7 @@
     },
     "keybindings": [
       {
-        "key": "ctrl+v",
+        "key": "ctrl+shift+v",
         "command": "md-paste-enhanced.paste",
         "when": "editorTextFocus"
       }
